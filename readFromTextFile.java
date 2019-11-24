@@ -18,3 +18,26 @@ public class readFromTextFile{
   br.close();
 }
 
+//do it again 
+public class readFromTxt{
+  File file  = new File("path of it");
+  file.CreateNewFile();
+  FileWriter fw = new FileWriter(file);
+  BufferedWriter bw = new BufferedWriter (fw);
+  bw.write("this is my second attemt");
+  bw.newLine();
+  bw.write("this is my second attempt second line");
+  bw.close();
+  FileReader fr = new FileReader(file);
+  BufferedReader br = new BufferedReader(fr);
+  String content = " ";
+  while((content = br.readLine())!=null){
+    system.out.println(content);
+  }
+  br.close();
+ 
+}
+
+
+    
+  
