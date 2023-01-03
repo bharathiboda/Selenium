@@ -1,0 +1,12 @@
+#!bin/bash
+
+read a
+read b
+if [ $a == $b ]
+then
+echo "a equals to b"
+else 
+echo "a is not equals to b"
+
+fi
+
